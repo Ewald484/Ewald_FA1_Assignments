@@ -10,19 +10,19 @@ namespace SectionB_Question1
         {
             public Resident Resident { get; set; }
             public string RequestType { get; set; }
-            public int EstimatedHours { get; set; }
             public int Priority { get; set; }
             public int SeverityLevel { get; set; }
+            public int EstimatedHours { get; set; }
             public int UrgencyScore { get; set; }
+            
 
-            public ServiceRequest(Resident resident, string requestType, int estimatedHours, int priority, int severityLevel, int urgencyScore)
+            public ServiceRequest(Resident resident, string requestType, int priority, int severityLevel, int estimatedHours)
             {
                 Resident = resident;
                 RequestType = requestType;
-                EstimatedHours = estimatedHours;
                 Priority = priority;
                 SeverityLevel = severityLevel;
-                UrgencyScore = urgencyScore;
+                EstimatedHours = estimatedHours;
         }
 
     }
